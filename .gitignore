@@ -1,0 +1,7 @@
+*.pth
+huggingface/
+terraform.tfvars
+backend_config.tfvars
+.terraform*
+.DS_Store
+Pipfile*

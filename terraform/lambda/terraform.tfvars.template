@@ -1,0 +1,4 @@
+image_tag_samhq =
+remote_state_ecr_bucket =
+remote_state_ecr_key    = 
+region                  = 
