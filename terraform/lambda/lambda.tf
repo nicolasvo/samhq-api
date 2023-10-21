@@ -6,7 +6,7 @@ resource "aws_cloudwatch_log_group" "samhq" {
 
 resource "aws_lambda_function" "samhq" {
   function_name = "samhq"
-  memory_size   = 8000
+  memory_size   = 10240
   timeout       = 900
   package_type  = "Image"
   architectures = ["x86_64"]

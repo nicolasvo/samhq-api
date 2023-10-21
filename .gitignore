@@ -5,3 +5,6 @@ backend_config.tfvars
 .terraform*
 .DS_Store
 Pipfile*
+*.jpeg
+*.png
+__pycache__

@@ -24,7 +24,7 @@ def lambda_handler(event, context):
         boxes = body.get("boxes") if body.get("boxes") else None
         points = body.get("points") if body.get("points") else None
         with tempfile.TemporaryDirectory(dir="/tmp/") as tmpdirname:
-            if not boxes or points:
+            if not boxes and not points:
                 return json.dumps({"image": ""})
             input_path = f"{tmpdirname}/input.jpeg"
             output_path = f"{tmpdirname}/output.png"
